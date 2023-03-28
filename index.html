@@ -5,52 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="./images/logo.svg">
-  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="./css/main-min.css">
   <title>Shortening (3-dars)</title>
 </head>
 <body>
   <!-- header part start -->
-  <header class="header-sec">
+  <header class="header">
     <div class="container">
       
-      <div class="header-wrapper">
+      <div class="header__wrapper">
         
         <h1 class="visually-hidden">Cite of shorter link</h1>
         
-        <nav class="menu">
+        <nav class="header__menu">
           
-          <a class="site-logo" href="./index.html">
-            <img class="logo-img"
+          <a class="header__site-logo" href="./index.html">
+            <img class="header__logo-img"
             src="./images/logo.svg"
             width="120"
             height="33"
             alt="logo of shortly">
           </a>
           
-          <ul class="menu-list">
+          <ul class="header__menu-list">
             
-            <li class="menu-item">
-              <a class="menu-link" href="#">Features</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Features</a>
             </li>
             
-            <li class="menu-item">
-              <a class="menu-link" href="#">Pricing</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Pricing</a>
             </li>
             
-            <li class="menu-item">
-              <a class="menu-link" href="#">Resources</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Resources</a>
             </li>
             
           </ul>
           
-          <ul class="menu-end">
+          <ul class="header__menu-end">
             
-            <li class="menu-end-item">
-              <a class="menu-item-link" href="#">Login</a>
+            <li class="header__menu-end-item">
+              <a class="header__menu-item-link" href="#">Login</a>
             </li>
             
-            <li class="menu-end-item">
-              <a class="menu-item-link btn" href="#">Sign Up</a>
+            <li class="header__menu-end-item">
+              <a class="header__menu-item-link btn" href="#">Sign Up</a>
             </li>
             
           </ul>
@@ -63,16 +65,16 @@
   <!-- header part finish -->
   
   <!-- main part start -->
-  <main class="main-sec">
+  <main class="main">
     
     <section class="intro">
       <div class="container">
-        <div class="intro-wrapper">
+        <div class="intro__wrapper">
           
-          <div class="intro-start">
-            <h2 class="intro-heading">More than just shorter links</h2>
-            <p class="intro-text">Build your brand's recognition and get detailed insights on how your links are performing.</p>
-            <a class="intro-link btn" href="#">Get Started</a>
+          <div class="intro__start">
+            <h2 class="intro__heading">More than just shorter links</h2>
+            <p class="intro__text">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <a class="intro__link btn" href="#">Get Started</a>
           </div>
           
         </div>
@@ -81,16 +83,17 @@
     
     <article class="shorten">
       <div class="container">
-        <div class="shorten-wrapper">
-          
-          <form class="shorten-form" action="https://echo.htmlacademy.ru/">
-            <input class="link-input"
+        <div class="shorten__wrapper">
+          <h3 class="visually-hidden">Shorten your link here..></h3>
+          <form class="shorten__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="shorten__link-input"
             type="text"
+            name="user_link"
             aria-label="Enter a link that you want shorten"
             placeholder="Shorten a link here..."
             autocomplete="off"
             required>
-            <button class="shorten-btn" type="submit">Shorten It!</button>
+            <button class="shorten__btn" type="submit">Shorten It!</button>
           </form>
           
         </div>
@@ -99,32 +102,32 @@
     
     <section class="statistics">
       <div class="container">
-        <div class="statistics-wrapper">
+        <div class="statistics__wrapper">
           
-          <div class="statistics-top">
-            <h2 class="statistics-heading">Advanced Statistics</h2>
-            <p class="statistics-text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+          <div class="statistics__top">
+            <h2 class="statistics__heading">Advanced Statistics</h2>
+            <p class="statistics__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
           </div>
           
-          <ul class="statistics-list">
-            <li class="statistics-item item-recognition">
-              <div class="item-wrapper">
-                <h3 class="statistics-item-heading">Brand Recognition</h3>
-                <p class="statistics-item-text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+          <ul class="statistics__list">
+            <li class="statistics__item statistics__item--recognition">
+              <div class="statistics__item-wrapper">
+                <h3 class="statistics__item-heading">Brand Recognition</h3>
+                <p class="statistics__item-text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
               </div>
             </li>
             
-            <li class="statistics-item item-records">
-              <div class="item-wrapper">
-                <h3 class="statistics-item-heading">Detailed Records</h3>
-                <p class="statistics-item-text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            <li class="statistics__item statistics__item--records">
+              <div class="statistics__item-wrapper">
+                <h3 class="statistics__item-heading">Detailed Records</h3>
+                <p class="statistics__item-text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
               </div>
             </li>
             
-            <li class="statistics-item item-advantages">
-              <div class="item-wrapper">
-                <h3 class="statistics-item-heading">Fully Customizable</h3>
-                <p class="statistics-item-text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+            <li class="statistics__item statistics__item--advantages">
+              <div class="statistics__item-wrapper">
+                <h3 class="statistics__item-heading">Fully Customizable</h3>
+                <p class="statistics__item-text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
               </div>
             </li>
             
@@ -136,9 +139,9 @@
     
     <section class="booster">
       <div class="container">
-        <div class="booster-wrapper">
-          <h2 class="booster-heading">Boost your links today</h2>
-          <a class="booster-link" href="#">Get Started</a>
+        <div class="booster__wrapper">
+          <h2 class="booster__heading">Boost your links today</h2>
+          <a class="booster__link" href="#">Get Started</a>
         </div>
       </div>
     </section>
@@ -147,76 +150,76 @@
   <!-- header part finish -->
   
   <!-- footer part start -->
-  <footer class="footer-sec">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-wrapper">
+      <div class="footer__wrapper">
         
-        <a class="footer-logo" href="./index.html">
-          <img class="footer-logo-img" 
+        <a class="footer__logo" href="./index.html">
+          <img class="footer__logo-img" 
           src="./images/Shortly.svg" 
           width="120"
           height="33"
           alt="logo of shortly">
         </a>
         
-        <ul class="footer-list">
+        <ul class="footer__list">
           
-          <li class="footer-item item-features">
-            <strong class="item-title">Features</strong>
-            <a class="item-link" href="#">Link Shortening</a>
-            <a class="item-link" href="#">Branded Links</a>
-            <a class="item-link" href="#">Analytics</a>
+          <li class="footer__item footer__item--features">
+            <strong class="footer__item-title">Features</strong>
+            <a class="footer__item-link" href="#">Link Shortening</a>
+            <a class="footer__item-link" href="#">Branded Links</a>
+            <a class="footer__item-link" href="#">Analytics</a>
           </li>
           
-          <li class="footer-item item-recourse">
-            <strong class="item-title">Resources</strong>
-            <a class="item-link" href="#">Blog</a>
-            <a class="item-link" href="#">Developers</a>
-            <a class="item-link" href="#">Support</a>
+          <li class="footer__item footer__item--recourse">
+            <strong class="footer__item-title">Resources</strong>
+            <a class="footer__item-link" href="#">Blog</a>
+            <a class="footer__item-link" href="#">Developers</a>
+            <a class="footer__item-link" href="#">Support</a>
           </li>
           
-          <li class="footer-item">
-            <strong class="item-title">Company</strong>
-            <a class="item-link" href="#">About</a>
-            <a class="item-link" href="#">Our Team</a>
-            <a class="item-link" href="#">Careers</a>
-            <a class="item-link" href="#">Contact</a>
+          <li class="footer__item">
+            <strong class="footer__item-title">Company</strong>
+            <a class="footer__item-link" href="#">About</a>
+            <a class="footer__item-link" href="#">Our Team</a>
+            <a class="footer__item-link" href="#">Careers</a>
+            <a class="footer__item-link" href="#">Contact</a>
           </li>
           
         </ul>
         
-        <ul class="app-list">
+        <ul class="footer__app-list">
           
-          <li class="app-item">
-            <a class="app-link" href="#" target="_blank">
-              <img class="app-img" src="./images/facebook.svg" 
+          <li class="footer__app-item">
+            <a class="footer__app-link" href="#" target="_blank">
+              <img class="footer__app-img" src="./images/facebook.svg" 
               width="24"
               height="24"
               alt="facebook icon">
             </a>
           </li>
           
-          <li class="app-item">
-            <a class="app-link" href="#" target="_blank">
-              <img class="app-img" src="./images/tvit.svg"
+          <li class="footer__app-item">
+            <a class="footer__app-link" href="#" target="_blank">
+              <img class="footer__app-img" src="./images/tvit.svg"
               width="24"
               height="24"
               alt="twitter icon">
             </a>
           </li>
           
-          <li class="app-item">
-            <a class="app-link" href="#" target="_blank">
-              <img class="app-img" src="./images/insta.svg"
+          <li class="footer__app-item">
+            <a class="footer__app-link" href="#" target="_blank">
+              <img class="footer__app-img" src="./images/insta.svg"
               width="24"
               height="24"
               alt="pinterest icon">
             </a>
           </li>
           
-          <li class="app-item">
-            <a class="app-link" href="#" target="_blank">
-              <img class="app-img" src="./images/inssta.svg"
+          <li class="footer__app-item">
+            <a class="footer__app-link" href="#" target="_blank">
+              <img class="footer__app-img" src="./images/inssta.svg"
               width="24"
               height="24"
               alt="instagram icon">
